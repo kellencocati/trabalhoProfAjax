@@ -1,43 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="css/estilo4.css">
-</head>
-
-<body>
-    <h2>
-        <a href="home.html">Home</a> -
-        <a href="miniCurriculo.html">Mini Currículo</a> -
-        <a href="especialidades.html">Especialidades</a> -
-        <a href="contato.html">Contato</a>
-    </h2>
-    <article>
-        <form name="form1" method="post" action="">
-            Nome: <input type="text" name="nome" />
-            <br/> E-mail: <input type="email" name="email" />
-            <br/> Telefone: <input type="tel" name="telefone" />
-            <br/> Consultório de prefência:
-            <select name="consultorioPreferencia">
-                <option value ="itaimPaulista">Itaim Paulista</option>
-                <option value ="saoMiguel">São Miguel Paulista</option>
-                <option value ="penha">Penha</option>
-                <option value ="tatuape">Tatuapé</option>
-            </select>
-            <br/> Data da consulta: <input type="date" name="data" />
-            <br/> Como chegou ao nosso site:
-            <select name="comoChegou">
-                <option value ="google">Google</option>
-                <option value ="cfm">Conselho Federal de Medicina</option>
-                <option value ="drConsulta">Dr Consulta</option>
-            </select>
-            <br/> Mensagem: <br/><textarea id="story" name="story" rows="5" cols="33"></textarea>
-            <br/> <input type="button" value="Enviar">
-        </form>
-    </article>
-</body>
-
+<html>
+    <head>
+        <title>Contato</title>
+        <meta charset="utf-8"/>
+    </head>
+    <body>
+        <header>
+            <img alt="banner" src="img/imagem1.png"/>
+        </header>
+        <nav>
+            <a href="index.html">Home</a> | 
+            <a href="blog.html">Blog (áudio)</a> | 
+            <a href="pagina1.html">Página 1 (vídeo)</a> | 
+            <a href="pagina2.html">Página 2 (iframe)</a> | 
+            <a href="contato.html">Contato</a>
+        </nav>
+        <section>
+            <h1>Contato</h1>
+            <h2>Entre em contato conosco</h2>
+            <p>Preencha o formulário abaixo:</p>
+            <form>
+                <p>Nome:<br/><input type="name" placeholder="Seu nome aqui"/></p>
+                <p>Email:<br/><input type="email"/></p>
+                
+                <p>Sexo:<br/>
+                    <input type="radio" name="sexo" value="M" checked/>Masculino<br/>
+                    <input type="radio" name="sexo" value="F"/>Feminino
+                </p>
+                <p>Assunto:<br/>
+                    <select>
+                        <option>Blog</option>
+                        <option>Página 1</option>
+                        <option>Página 2</option>
+                    </select>
+                </p>
+                <textarea placeholder="Sua mensagem aqui"></textarea>
+                <p><input type="submit" value="ENVIAR"/></p>
+            </form>
+        </section>
+        <footer>
+            <hr/>
+            <small> &copy;2018</small>
+        </footer>
+    </body>
 </html>
