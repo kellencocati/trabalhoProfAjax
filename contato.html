@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/estilo4.css">
+</head>
+
+<body>
+    <h2>
+        <a href="home.html">Home</a> -
+        <a href="miniCurriculo.html">Mini Currículo</a> -
+        <a href="especialidades.html">Especialidades</a> -
+        <a href="contato.html">Contato</a>
+    </h2>
+    <article>
+        <form name="form1" method="post" action="">
+            Nome: <input type="text" name="nome" />
+            <br/> E-mail: <input type="email" name="email" />
+            <br/> Telefone: <input type="tel" name="telefone" />
+            <br/> Consultório de prefência:
+            <select name="consultorioPreferencia">
+                <option value ="itaimPaulista">Itaim Paulista</option>
+                <option value ="saoMiguel">São Miguel Paulista</option>
+                <option value ="penha">Penha</option>
+                <option value ="tatuape">Tatuapé</option>
+            </select>
+            <br/> Data da consulta: <input type="date" name="data" />
+            <br/> Como chegou ao nosso site:
+            <select name="comoChegou">
+                <option value ="google">Google</option>
+                <option value ="cfm">Conselho Federal de Medicina</option>
+                <option value ="drConsulta">Dr Consulta</option>
+            </select>
+            <br/> Mensagem: <br/><textarea id="story" name="story" rows="5" cols="33"></textarea>
+            <br/> <input type="button" value="Enviar">
+        </form>
+    </article>
+</body>
+
+</html>
